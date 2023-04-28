@@ -17,15 +17,16 @@ export const Fijaciones = (props) => {
                     console.log(articulo),
                     //<div className="product-item product-fijacion" key={articulo.sku}>{articulo.sku}--{articulo.menu_order}
                     <div className="product-item product-fijacion" key={articulo.sku}>
-                        <div className="none">
-                            {url = "https://preprod.shad.es//assets/images/thumbs/" + articulo.images[0].title + ".jpg"
-                            }
-                        </div>
+                        <a href={articulo.permalink} target="_blank" rel="noreferrer">
+                            <div className="none">
+                                {url = "https://preprod.shad.es//assets/images/thumbs/" + articulo.images[0].title + ".jpg"
+                                }
+                            </div>
 
-                        <img className="product-item-image" src={url} alt={articulo.title} />
+                            <img className="product-item-image" src={url} alt={articulo.title} />
 
-                        <div className="product-item-title">{articulo.title}--{articulo.menu_order}</div>
-
+                            <div className="product-item-title">{articulo.title}--{articulo.menu_order}</div>
+                        </a>
                     </div>
                 ))}
 
