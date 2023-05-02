@@ -76,7 +76,7 @@ export const Selector = () => {
             fetch("https://preprod.shad.es/wc-api/v3/products?filter[sku]=" + fijacion.SKU + "&consumer_key=ck_ba8c741efe83858f8d748707026f0a933d3c486c&consumer_secret=cs_cfe7fd819bc78fac8522cd37fba51a3f4c0261da")
                 .then(response => response.json())
                 .then(data => {
-                    //console.log(data.products[0])
+                    console.log(data.products[0])
                     setPtm(ptm => [...ptm, data.products[0]])
                 })
         })

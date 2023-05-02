@@ -14,7 +14,7 @@ export const Fijaciones = (props) => {
                 }
 
                 {articulos.map(articulo => (
-                    console.log(articulo),
+                    //console.log(articulo),
                     //<div className="product-item product-fijacion" key={articulo.sku}>{articulo.sku}--{articulo.menu_order}
                     <div className="product-item product-fijacion" key={articulo.sku}>
                         <a href={articulo.permalink} target="_blank" rel="noreferrer">
