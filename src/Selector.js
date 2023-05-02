@@ -138,7 +138,7 @@ export const Selector = () => {
             articulos.then((articulos) => {
                 getArticulos(articulos)
             })
-        }, 1000);
+        }, 5000);
         console.log(selectMarca, selectModelo, selectAnyo, codigoModelo)
     }
 
